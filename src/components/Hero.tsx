@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { useSpring, animated } from '@react-spring/web';
+import heroBackground from '@/assets/hero-background.jpg';
 
 type SlideData = {
   id: number;
@@ -14,7 +15,7 @@ type SlideData = {
 const slides: SlideData[] = [
   {
     id: 1,
-    imageSrc: '/lovable-uploads/44997248-2a7d-4c4b-8656-13d704d35b37.png',
+    imageSrc: heroBackground,
     title: 'Riverside Cottages',
     subtitle: 'Cozy accommodations with stunning views of the Kali River'
   },
