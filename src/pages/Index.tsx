@@ -50,10 +50,10 @@ const Index: React.FC = () => {
             
             <div className="animate-slide-up animation-delay-200">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                Experience Comfort & Nature at Our Homestay
+                Welcome to Creek Shore Homestay
               </h2>
               <p className="text-foreground/70 mb-6">
-                Nestled in the heart of beautiful Dandeli, our homestay offers the perfect blend of comfort and natural beauty. Experience authentic local hospitality in a tranquil setting surrounded by lush greenery and peaceful valleys.
+                Nestled in the heart of beautiful Dandeli, Creek Shore Homestay offers the perfect blend of comfort and natural beauty. Experience authentic local hospitality in a tranquil setting surrounded by lush greenery and peaceful valleys.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -101,6 +101,66 @@ const Index: React.FC = () => {
                 <Link to="/contact" className="inline-flex items-center text-green-700 hover:underline group">
                   Contact us for directions <ArrowRight size={16} className="ml-1 group-hover:translate-x-2 transition-transform duration-300" />
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Our Journey Section - The Couple Behind Creek Shore */}
+        <section className="section-padding bg-white">
+          <div className="container px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              
+              <div className="animate-slide-up">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=500&q=80" 
+                    alt="Couple hosting at Creek Shore Homestay" 
+                    className="w-full h-[400px] object-cover rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300" 
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-green-700 text-white p-4 rounded-xl shadow-xl">
+                    <p className="text-sm font-medium">25+ Years</p>
+                    <p className="text-xs">of Hospitality</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="animate-slide-up animation-delay-200">
+                <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+                  Our Journey
+                </h2>
+                <p className="text-lg text-green-700 font-semibold mb-4">
+                  Meet Rajesh & Sunita Sharma
+                </p>
+                <p className="text-foreground/70 mb-6">
+                  After dedicating 35 years to their respective careers in education and healthcare, Rajesh and Sunita decided to follow their dream of creating a peaceful retreat in the lap of nature. In 2018, they opened Creek Shore Homestay with a vision to share the beauty of Dandeli while providing guests with the warmth of a real home.
+                </p>
+                <p className="text-foreground/70 mb-6">
+                  "We believe that every guest is family," says Sunita with a warm smile. "Our goal is not just to provide accommodation, but to create memories that last a lifetime." Their passion for cooking traditional Karnataka cuisine and sharing local stories has made Creek Shore a favorite among travelers seeking authentic experiences.
+                </p>
+                
+                <div className="bg-green-50 p-6 rounded-lg mb-6">
+                  <h3 className="font-semibold text-green-800 mb-3">What Makes Us Special</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <p className="text-sm text-foreground/80">Homemade traditional meals using organic ingredients</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <p className="text-sm text-foreground/80">Personal attention and local area guidance</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                      <p className="text-sm text-foreground/80">Stories and insights about local culture and history</p>
+                    </div>
+                  </div>
+                </div>
+
+                <blockquote className="border-l-4 border-green-600 pl-4 italic text-foreground/80">
+                  "Hospitality is not about impressing people, it's about making them feel welcome and at home."
+                  <footer className="text-sm text-green-700 mt-2">— Rajesh & Sunita</footer>
+                </blockquote>
               </div>
             </div>
           </div>
