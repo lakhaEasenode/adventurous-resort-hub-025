@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { useSpring, animated } from '@react-spring/web';
 import heroBackground from '@/assets/hero-background.jpg';
+import heroBackground2 from '@/assets/hero-background-2.jpg';
+import heroBackground3 from '@/assets/hero-background-3.jpg';
 
 type SlideData = {
   id: number;
@@ -21,13 +23,13 @@ const slides: SlideData[] = [
   },
   {
     id: 2,
-    imageSrc: '/lovable-uploads/cc6dd7ad-c5fb-4fef-9dd0-f8dca5d5a10d.png',
+    imageSrc: heroBackground2,
     title: 'Western Ghats Panorama',
     subtitle: 'Experience breathtaking views of the pristine Western Ghats and Kali River'
   },
   {
     id: 3,
-    imageSrc: '/lovable-uploads/968e9c7f-6872-4c43-ad59-1dd92c92d29a.png',
+    imageSrc: heroBackground3,
     title: 'Jungle Trekking Adventures',
     subtitle: 'Explore the dense forests and hills of Dandeli on guided trek experiences'
   },
