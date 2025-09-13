@@ -27,7 +27,6 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Removed "Booking" from this array
   const navLinks = [{
     name: 'Home',
     path: '/'
@@ -38,8 +37,8 @@ const Navbar: React.FC = () => {
     name: 'Accommodation',
     path: '/accommodation'
   }, {
-    name: 'Activities',
-    path: '/activities'
+    name: 'Gallery', 
+    path: '/gallery'
   }, {
     name: 'Contact',
     path: '/contact'
@@ -64,9 +63,14 @@ const Navbar: React.FC = () => {
             <Search size={20} />
           </button>
           <ThemeToggle />
-          <Link to="/booking" className="btn-primary">
-            Book Now
-          </Link>
+          <a 
+            href="https://wa.me/918277385225?text=Hello! I'm interested in booking a room at your homestay." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            WhatsApp Booking
+          </a>
         </div>
         
         {/* Mobile Right Controls */}
@@ -103,9 +107,15 @@ const Navbar: React.FC = () => {
             <Search size={20} />
             Search
           </button>
-          <Link to="/booking" className="btn-primary text-center" onClick={() => setIsMenuOpen(false)}>
-            Book Now
-          </Link>
+          <a 
+            href="https://wa.me/918277385225?text=Hello! I'm interested in booking a room at your homestay." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary text-center" 
+            onClick={() => setIsMenuOpen(false)}
+          >
+            WhatsApp Booking
+          </a>
         </nav>
       </div>
       

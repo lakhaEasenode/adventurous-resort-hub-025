@@ -8,9 +8,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Accommodation from "./pages/Accommodation";
 import About from "./pages/About";
-import Activities from "./pages/Activities";
-import Booking from "./pages/Booking";
-import BookingSuccess from "./pages/BookingSuccess";  // Add this import
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import ChatBot from "./components/ChatBot";
@@ -30,9 +27,6 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/accommodation" element={<Accommodation />} />
             <Route path="/about" element={<About />} />
-            <Route path="/activities" element={<Activities />} />
-            <Route path="/booking" element={<Booking />} />
-            <Route path="/booking-success" element={<BookingSuccess />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

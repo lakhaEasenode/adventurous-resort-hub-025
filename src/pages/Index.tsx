@@ -4,37 +4,35 @@ import { Button } from "@/components/ui/button";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
-import FeaturedActivities from '@/components/FeaturedActivities';
 import SpecialOffers from '@/components/SpecialOffers';
 import HomeGallery from '@/components/HomeGallery';
-import NearbyAttractions from '@/components/NearbyAttractions';
 import DiscountOffers from '@/components/DiscountOffers';
 import { ArrowRight, Leaf, Shield, Award, Phone } from 'lucide-react';
-import { AdPopup } from '@/components/AdPopup';
 
 const Index: React.FC = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
-      <AdPopup />
       
       <main className="flex-grow">
         <Hero />
         
-        {/* Call Now Button - repositioned above chatbot with more space */}
+        {/* WhatsApp Booking Button */}
         <div className="fixed bottom-32 right-4 z-40 md:bottom-24">
           <a 
-            href="tel:+918277385225" 
+            href="https://wa.me/918277385225?text=Hello! I'm interested in booking a room at your homestay." 
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-600 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 hover:scale-110 animate-bounce"
           >
             <Phone size={20} />
-            <span className="font-medium">Call Now</span>
+            <span className="font-medium">WhatsApp</span>
           </a>
         </div>
         
         {/* Special Promotion Banner */}
         <div className="bg-green-700 text-white py-3 px-4 text-center shadow-md">
           <div className="container mx-auto">
-            <p className="text-xl font-bold">Book now just at ₹1499! <Link to="/booking" className="underline ml-2 hover:text-yellow-200 transition-colors">Limited time offer</Link></p>
+            <p className="text-xl font-bold">Book now for special rates! <a href="https://wa.me/918277385225" className="underline ml-2 hover:text-yellow-200 transition-colors">WhatsApp us today</a></p>
           </div>
         </div>
         
@@ -52,10 +50,10 @@ const Index: React.FC = () => {
             
             <div className="animate-slide-up animation-delay-200">
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                Experience Nature's Paradise in Dandeli
+                Experience Comfort & Nature at Our Homestay
               </h2>
               <p className="text-foreground/70 mb-6">
-                Nestled in the heart of Western Ghats, Dandeli Adventures offers an immersive experience in one of India's most biodiverse regions. Our eco-friendly resort combines luxury with wilderness, providing the perfect backdrop for your nature retreat.
+                Nestled in the heart of beautiful Dandeli, our homestay offers the perfect blend of comfort and natural beauty. Experience authentic local hospitality in a tranquil setting surrounded by lush greenery and peaceful valleys.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -64,9 +62,9 @@ const Index: React.FC = () => {
                     <Leaf size={20} className="group-hover:scale-125 transition-transform duration-300" />
                   </div>
                   <div>
-                    <h3 className="font-medium group-hover:text-green-700 transition-colors duration-300">Eco-Friendly Resort</h3>
+                    <h3 className="font-medium group-hover:text-green-700 transition-colors duration-300">Peaceful Environment</h3>
                     <p className="text-sm text-foreground/70">
-                      Committed to sustainable tourism practices with minimal environmental impact.
+                      Wake up to the sounds of birds and fresh mountain air in our serene location.
                     </p>
                   </div>
                 </div>
@@ -76,9 +74,9 @@ const Index: React.FC = () => {
                     <Shield size={20} className="group-hover:scale-125 transition-transform duration-300" />
                   </div>
                   <div>
-                    <h3 className="font-medium group-hover:text-green-700 transition-colors duration-300">Safety First Adventures</h3>
+                    <h3 className="font-medium group-hover:text-green-700 transition-colors duration-300">Safe & Clean Stay</h3>
                     <p className="text-sm text-foreground/70">
-                      All activities conducted by certified professionals with top-tier safety equipment.
+                      Well-maintained rooms with all basic amenities for a comfortable stay.
                     </p>
                   </div>
                 </div>
@@ -88,9 +86,9 @@ const Index: React.FC = () => {
                     <Award size={20} className="group-hover:scale-125 transition-transform duration-300" />
                   </div>
                   <div>
-                    <h3 className="font-medium group-hover:text-green-700 transition-colors duration-300">Award-Winning Hospitality</h3>
+                    <h3 className="font-medium group-hover:text-green-700 transition-colors duration-300">Local Hospitality</h3>
                     <p className="text-sm text-foreground/70">
-                      Recognized for exceptional service and authentic local experiences.
+                      Experience authentic local culture and home-cooked meals with warm hospitality.
                     </p>
                   </div>
                 </div>
@@ -181,12 +179,6 @@ const Index: React.FC = () => {
         {/* Gallery Section */}
         <HomeGallery />
         
-        {/* Featured Activities */}
-        <FeaturedActivities />
-        
-        {/* Nearby Attractions Section */}
-        <NearbyAttractions />
-        
         {/* Testimonials */}
         <section className="section-padding container">
           <div className="text-center mb-16 animate-slide-up">
@@ -202,22 +194,22 @@ const Index: React.FC = () => {
             {[
               {
                 name: "Stanley Nuthalpati",
-                location: "New York, USA",
-                quote: "The river rafting experience was exhilarating! The staff was incredibly knowledgeable and made us feel safe while still having a blast.",
+                location: "Bengaluru, India", 
+                quote: "What a peaceful and comfortable stay! The homestay provided the perfect escape from city life. The hosts were incredibly warm and welcoming.",
                 image: "/lovable-uploads/b2944dcd-84a0-4ab8-af63-861cd91c2d08.png",
                 delay: 0
               },
               {
                 name: "Atharva Kulkarni",
                 location: "Mumbai, India",
-                quote: "The treehouse villa exceeded our expectations. Waking up to birds chirping and the view of the forest canopy was magical. A perfect anniversary getaway.",
+                quote: "The rooms were clean and comfortable with a beautiful view. Home-cooked meals were delicious, and the family made us feel so welcome. Perfect for a weekend getaway.",
                 image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
                 delay: 200
               },
               {
-                name: "Rajat Hegde",
-                location: "Singapore",
-                quote: "The wildlife safari was the highlight of our trip. We spotted elephants, deer, and even a black panther! Our guide was exceptional in tracking the animals.",
+                name: "Rajat Hegde", 
+                location: "Goa, India",
+                quote: "Amazing hospitality and such a serene location! Waking up to the sounds of nature was magical. The hosts helped us with local sightseeing too.",
                 image: "/lovable-uploads/54f9733a-3115-43f8-8702-ac90313ce5aa.png",
                 delay: 400
               }
@@ -248,10 +240,10 @@ const Index: React.FC = () => {
           <div className="container px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">
-                Get Exclusive Updates
+                Stay Updated with Our Homestay
               </h2>
               <p className="text-foreground/70 mb-8">
-                Subscribe to our newsletter and be the first to know about new adventures and seasonal experiences.
+                Subscribe to get updates about room availability and special offers at our homestay.
               </p>
               <form className="flex flex-col sm:flex-row items-center max-w-md mx-auto gap-3" onSubmit={(e) => {
                 e.preventDefault();
@@ -285,14 +277,19 @@ const Index: React.FC = () => {
           <div className="container relative z-10 px-4 text-center">
             <div className="max-w-3xl mx-auto animate-fade-in">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-glow">
-                Your Adventure Awaits!
+                Your Perfect Homestay Awaits!
               </h2>
               <p className="text-xl mb-8 text-white/90">
-                Book your stay now and create memories that will last a lifetime.
+                Contact us now to book your comfortable stay and create wonderful memories.
               </p>
-              <Link to="/booking" className="inline-block px-8 py-4 bg-white text-green-700 font-medium text-lg rounded-md transition-all duration-300 hover:bg-white/90 hover:shadow-lg hover:translate-y-[-2px] hover:scale-105">
-                Book Your Adventure Now
-              </Link>
+              <a 
+                href="https://wa.me/918277385225?text=Hello! I'm interested in booking a room at your homestay." 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-white text-green-700 font-medium text-lg rounded-md transition-all duration-300 hover:bg-white/90 hover:shadow-lg hover:translate-y-[-2px] hover:scale-105"
+              >
+                WhatsApp Us to Book Now
+              </a>
             </div>
           </div>
         </section>
